@@ -19,7 +19,7 @@ const Video = ({ video }) => {
         <p>{video.description}</p>
         <p><h4>Comments</h4></p>
         <div className="video-comments">
-            {video.comments !== 0 ?
+            {video.comments.length !== 0 ?
                 video.comments.map(c => {
                     return <p className="video-comment">
                         {`${c.userProfile.name} says: `} {`"${c.message}"`}
