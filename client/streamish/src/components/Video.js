@@ -23,9 +23,9 @@ const Video = ({ video }) => {
                 video.comments.map(c => {
                     return <p className="video-comment">
                         {`${c.userProfile.name} says: `} {`"${c.message}"`}
-                    </p>
-                }) : 
-                <p>None</p>}
+                    </p>})
+                 : 
+                 <p>None</p>}
         </div>
       </CardBody>
     </Card>
